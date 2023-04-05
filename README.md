@@ -10,7 +10,7 @@
 
 ## Milestone 1
 
-### Dataset^1^
+### Dataset<sup>1</sup>
 
 - Energy: https://ourworldindata.org/energy 
 - Renewable energy: https://ourworldindata.org/renewable-energy
@@ -50,7 +50,7 @@ We plan to select the most significant data elements and use interactive charts 
 
 Therefore, we will select the most relevant and impactful data elements and use interactive visualizations with a clear and logical narrative flow that effectively communicates our data story. Our approach not only presents data, but also aims to raise awareness and encourage action by conveying a compelling message that resonates with the audience.
 
-One of our sources of inspiration is a website that presents a wide range of global information during the COVID-19 pandemic in a clear, visually appealing, and informative manner without overwhelming the viewer^2^.
+One of our sources of inspiration is a website that presents a wide range of global information during the COVID-19 pandemic in a clear, visually appealing, and informative manner without overwhelming the viewer<sup>2</sup>.
 
 ### Reference
 1. Our World in Data: https://ourworldindata.org/
