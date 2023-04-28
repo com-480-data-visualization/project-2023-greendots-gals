@@ -60,7 +60,6 @@ One of our sources of inspiration is a website that presents a wide range of glo
 ## Milestone 2 (7th May, 5pm)
 
 **10% of the final grade**
-https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/Website/index.html
 
 ## Milestone 3 (4th June, 5pm)
 
