@@ -93,7 +93,7 @@ This is the layout of 'Split by Region':
 
 In this part, the visulization is similar to the section 2. The lines in this line chart will be racing together as users interact with the tool. Each line present a trading and current share (percentage and value) of renewable energy in overall energy consumption of one country. 
 
-[figures and instructions TBC]
+![Lable IV](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Label%20IV.svg)![country](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Country%20line.svg)
 
 #### 4. create separate bar for each country, show a more detailed view on each sub-category renewable energy consumption (wind, solar, hydrapower, other), two main graphs: racing line to show year & pie chart to show percentages 
   - In the main page, the top 10 country basic information will be shown in a table as following:
