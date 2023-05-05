@@ -77,6 +77,10 @@ One of our sources of inspiration is a website that presents a wide range of glo
   ![Table of countries with extend](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Table_of_countries_with_extend.png)
   - In each small window, on the left, a racing line graph shows each clean energy trading for each year. On the right side, a pie chart shows the percentage of each clean energy of the year 2022. The layout is like this: 
   ![Layout of renewable energy](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/layout_of_country_details.png)
+  - Extended ideas:
+  1. The table of countries is sorted defualt by the total amount of energy. To extend, we could let user to chose to sort by any of the three features.
+  2. The pie chart was defualt to show the information of 2022, but we could let user to choose any year's (from 1965 to 2022) information by clicking a year line.
+
 
 ### Prototype Review
 
