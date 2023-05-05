@@ -61,8 +61,7 @@ One of our sources of inspiration is a website that presents a wide range of glo
 
 **10% of the final grade**
 ### Tools:
-The library used here related to lectures
-- 
+(The library used here related to lectures)
 
 ### Goals:
 1. In 
