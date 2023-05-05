@@ -67,10 +67,18 @@ One of our sources of inspiration is a website that presents a wide range of glo
 1. In 
 
 ### Implements (including core design and extras):
-1. two turnable earth (total and per-person, flipped by a bottom) to show the energy consumption in each country, with a label per country containing Name of country, total number of energy consumption, and percentage + value of fossils energy
-2.  a big line racing graph to show the climate change and greenhouse gas emissions trading based on year
-3.  a big line racing graph with the trading and current share (percentage and value) of renewable energy in overall energy consumption of each country (top 10 most consuming countries)
-4.  create separate bar for each country, show a more detailed view on each sub-category renewable energy consumption (wind, solar, hydrapower, other), two main graphs: racing line to show year & pie chart to show percentages 
+#### 1. two turnable earth (total and per-person, flipped by a bottom) to show the energy consumption in each country, with a label per country containing Name of country, total number of energy consumption, and percentage + value of fossils energy
+
+#### 2. a big line racing graph to show the climate change and greenhouse gas emissions trading based on year
+
+The interactive section of our website presents an in-depth look at the relationship between climate change and greenhouse gas emissions trading. This feature provides users with the ability to select from a variety of climate change indicators, including changes over time in temperature, CO2 concentration, N2O concentration, CH4 concentration, ocean pH, sea surface temperature, ocean heat content, sea level rise, and Arctic ice extent. By selecting specific indicators, users can compare them to greenhouse gas emissions trading, gaining valuable insights into the impact of these emissions on our planet. The interactive feature takes the form of a line chart, with the selected indicators racing together as users interact with the tool. This section is a valuable resource for anyone looking to gain a better understanding of the complex relationship between climate change and greenhouse gas emissions. 
+
+#### 3. a big line racing graph with the trading and current share (percentage and value) of renewable energy in overall energy consumption of each country (top 10 most consuming countries)
+
+In this part, the visulization is similar to the section 2. The lines in this line chart will be racing together as users interact with the tool. Each line present a trading and current share (percentage and value) of renewable energy in overall energy consumption of one country. 
+
+
+#### 4. create separate bar for each country, show a more detailed view on each sub-category renewable energy consumption (wind, solar, hydrapower, other), two main graphs: racing line to show year & pie chart to show percentages 
   - In the main page, the top 10 country basic information will be shown in a table as following:
   ![Table of countries](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Table_of_countries.png)
   - When you click on a single country, a more detailed data will be presented, the process will be like this:
