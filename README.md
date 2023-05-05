@@ -60,10 +60,20 @@ One of our sources of inspiration is a website that presents a wide range of glo
 ## Milestone 2 (7th May, 5pm)
 
 **10% of the final grade**
+### Tools:
+The library used here related to lectures
+
+### Goals:
+1. In 
+
+### Implements (including core design and extras):
 1. two turnable earth (total and per-person, flipped by a bottom) to show the energy consumption in each country, with a label per country containing Name of country, total number of energy consumption, and percentage + value of fossils energy
 2.  a big line racing graph to show the climate change and greenhouse gas emissions trading based on year
 3.  a big line racing graph with the trading and current share (percentage and value) of renewable energy in overall energy consumption of each country (top 10 most consuming countries)
 4.  create separate bar for each country, show a more detailed view on each sub-category renewable energy consumption (wind, solar, hydrapower, other), two main graphs: racing line to show year & pie chart to show percentages 
+
+### Prototype Review
+
 
 ## Milestone 3 (4th June, 5pm)
 
