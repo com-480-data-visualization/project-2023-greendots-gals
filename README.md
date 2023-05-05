@@ -62,6 +62,7 @@ One of our sources of inspiration is a website that presents a wide range of glo
 **10% of the final grade**
 ### Tools:
 The library used here related to lectures
+- 
 
 ### Goals:
 1. In 
@@ -71,6 +72,9 @@ The library used here related to lectures
 2.  a big line racing graph to show the climate change and greenhouse gas emissions trading based on year
 3.  a big line racing graph with the trading and current share (percentage and value) of renewable energy in overall energy consumption of each country (top 10 most consuming countries)
 4.  create separate bar for each country, show a more detailed view on each sub-category renewable energy consumption (wind, solar, hydrapower, other), two main graphs: racing line to show year & pie chart to show percentages 
+  - In the main page, the top 10 country basic information will be shown in a table as following:
+  - When you click on a single country, a more detailed data will be presented, the process will be like this:
+  - In each small window, on the left, a racing line graph shows each clean energy trading for each year. On the right side, a pie chart shows the percentage of each clean energy of the year 2022. The layout is like this: 
 
 ### Prototype Review
 
