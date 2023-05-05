@@ -72,8 +72,11 @@ One of our sources of inspiration is a website that presents a wide range of glo
 3.  a big line racing graph with the trading and current share (percentage and value) of renewable energy in overall energy consumption of each country (top 10 most consuming countries)
 4.  create separate bar for each country, show a more detailed view on each sub-category renewable energy consumption (wind, solar, hydrapower, other), two main graphs: racing line to show year & pie chart to show percentages 
   - In the main page, the top 10 country basic information will be shown in a table as following:
+  ![Table of countries](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Table_of_countries.png)
   - When you click on a single country, a more detailed data will be presented, the process will be like this:
+  ![Table of countries with extend](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Table_of_countries_with_extend.png)
   - In each small window, on the left, a racing line graph shows each clean energy trading for each year. On the right side, a pie chart shows the percentage of each clean energy of the year 2022. The layout is like this: 
+  ![Layout of renewable energy](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/layout_of_country_details.png)
 
 ### Prototype Review
 
