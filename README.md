@@ -67,7 +67,9 @@ One of our sources of inspiration is a website that presents a wide range of glo
 1. In 
 
 ### Implements (including core design and extras):
-#### 1. two turnable earth (total and per-person, flipped by a bottom) to show the energy consumption in each country, with a label per country containing Name of country, total number of energy consumption, and percentage + value of fossils energy
+#### 1. One spinnable earth to show the energy consumption in each country.
+
+The first element of our website is an Earth that fills the whole sight. It is interactive where people can let it rotate at will. Users can click on any country, and related data of the country will pop out.  We provide two versions of information, separately giving users an insight of energy consumption in the whole country or per person. Users can select the total mode of per person mode with a button on the side. The pop out label of each country contains Information including name of the country, number of energy consumption, and percentage and value of fossils energy consumption in the whole energy consumption. The shade of background color depends on the value of the energy consumption. The higher the consumption is, the darker the shade will be. The difference in color shade gives the users an intuitive impression of the global level of energy consumption.
 
 #### 2. a big line racing graph to show the climate change and greenhouse gas emissions trading based on year
 
