@@ -57,7 +57,7 @@ One of our sources of inspiration is a website that presents a wide range of glo
 2. Latest updates: COVID-19 vaccination charts, maps and eligibility by country: https://www.reuters.com/graphics/world-coronavirus-tracker-and-maps/vaccination-rollout-and-access/
 
 
-## Milestone 2 (7th May, 5pm)
+## Milestone 2
 
 **10% of the final grade**
 ### Tools:
