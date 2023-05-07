@@ -66,7 +66,7 @@ One of our sources of inspiration is a website that presents a wide range of glo
 3. Python
 
 ### Sketch and Prototype of out Website 
-[here](https://github.com/Skye-Du/GreenDots_DataViz.github.io/blob/theme-for-fork/index.html)
+[here](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/index.html)
 
 ### Goals and Implements (including core design and extras):
 #### 1. One spinnable earth to show the energy consumption in each country.
