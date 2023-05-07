@@ -65,8 +65,8 @@ One of our sources of inspiration is a website that presents a wide range of glo
 2. Echarts
 3. Python
 
-### Sketch and Prototype of out Website 
-[here](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/index.html)
+### Prototype preview
+[Here](https://skye-du.github.io/GreenDots_DataViz.github.io/)
 
 ### Goals and Implements (including core design and extras):
 #### 1. One spinnable earth to show the energy consumption in each country.
@@ -105,9 +105,6 @@ In this part, the visualization will present the access to clean energy vs. GDP 
   - Extended ideas:
   1. The table of countries is sorted defualt by the total amount of energy. To extend, we could let user to chose to sort by any of the three features.
   2. The pie chart was defualt to show the information of 2022, but we could let user to choose any year's (from 1965 to 2022) information by clicking a year line.
-
-
-### Prototype Review
 
 
 ## Milestone 3 (4th June, 5pm)
