@@ -89,7 +89,7 @@ This is the layout of 'Split by Region':
 ![climate change II](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Climate%20Change%20II.svg)
 
 #### 3. Access to clean energy(proportion) vs. GDP per capita
-In this part, the visualization will present the access to clean energy vs. GDP per capita. It is an interactive visualization. Users can select countries or regions and year. Users also could decide to let the figure automatically change over years to the energy transformation. Users can the results from two data processing methods, with linear X or log X
+In this part, the visualization will present the access to clean energy vs. GDP per capita. It is an interactive visualization. Users can select countries or regions and year. Users also could decide to let the figure automatically change over years to the energy transformation. Users can the results from two data processing methods, with linear X or log X. When users click the circle to see details about data.
 ![Chart 3](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/chart3.svg)
 
 #### 4. Create separate bar for each country, show a more detailed view on each sub-category renewable energy consumption (wind, solar, hydrapower, other), two main graphs: racing line to show year & pie chart to show percentages 
