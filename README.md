@@ -78,7 +78,7 @@ The interactive section of our website presents an in-depth look at the relation
 
 The initial status is like following:
 
-< img src="https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Label%20I.svg", width="80%", height="80%"> <img, src="https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Climate%20Change%20%20I.svg", width="80%", height="80%")
+![label i](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Label%20I.svg)![climate change i](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Climate%20Change%20%20I.svg)
 
 Users can select indicators of how many regions and which data to show:
 
