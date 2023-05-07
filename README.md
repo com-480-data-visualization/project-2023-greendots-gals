@@ -78,18 +78,17 @@ The interactive section of our website presents an in-depth look at the relation
 
 The initial status is like following:
 
-
-![label i](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Label%20I.svg)![climate change i](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Climate%20Change%20%20I.svg)
+![climate change i](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Climate%20Change%20t1.svg)
 
 Users can select indicators of how many regions and which data to show:
 
-![label ii](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Label%20II.svg)![climate change iii](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Climate%20Change%20III.svg)
+![climate change iii](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Climate%20Change%20t2.svg)
 
 This is the layout of 'Split by Region':
 
 ![climate change II](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Climate%20Change%20II.svg)
 
-#### 3. a big line racing graph with the trading and current share (percentage and value) of renewable energy in overall energy consumption of each country (top 10 most consuming countries)
+#### 3. 
 
 In this part, the visulization is similar to the section 2. The lines in this line chart will be racing together as users interact with the tool. Each line present a trading and current share (percentage and value) of renewable energy in overall energy consumption of one country. 
 
