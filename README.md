@@ -61,10 +61,12 @@ One of our sources of inspiration is a website that presents a wide range of glo
 
 **10% of the final grade**
 ### Tools:
-1. D3 Gallery
-2. Echarts
-3. Python
-4. Story telling skills (Lecture 12)
+1. Web development skills and designing skills (lecture 1, 8)
+2. D3 Gallery (lecture 4, 5)
+3. Visualization with maps (lecture 9)
+4. Echarts
+5. Python for data analysis
+6. Story telling skills (Lecture 12)
 
 ### Prototype preview
 [Here](http://htmlpreview.github.io/?https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/index.html)
