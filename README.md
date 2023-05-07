@@ -65,7 +65,7 @@ One of our sources of inspiration is a website that presents a wide range of glo
 2. Echarts
 3. Python
 
-### Implements (including core design and extras):
+### Goals and Implements (including core design and extras):
 #### 1. One spinnable earth to show the energy consumption in each country.
 
 The first element of our website is an Earth that fills the whole sight. It is interactive where people can let it rotate at will. Users can click on any country, and related data of the country will pop out.  We provide two versions of information, separately giving users an insight of energy consumption in the whole country or per person. Users can select the total mode of per person mode with a button on the side. The pop out label of each country contains Information including name of the country, number of energy consumption, and percentage and value of fossils energy consumption in the whole energy consumption. The shade of background color depends on the value of the energy consumption. The higher the consumption is, the darker the shade will be. The difference in color shade gives the users an intuitive impression of the global level of energy consumption.
@@ -77,6 +77,10 @@ The first element of our website is an Earth that fills the whole sight. It is i
 The interactive section of our website presents an in-depth look at the relationship between climate change and greenhouse gas emissions trading. This feature provides users with the ability to select from a variety of climate change indicators, including changes over time in temperature, CO2 concentration, N2O concentration, CH4 concentration, ocean pH, sea surface temperature, ocean heat content, sea level rise, and Arctic ice extent. By selecting specific indicators, users can compare them to greenhouse gas emissions trading, gaining valuable insights into the impact of these emissions on our planet. The interactive feature takes the form of a line chart, with the selected indicators racing together as users interact with the tool. This section is a valuable resource for anyone looking to gain a better understanding of the complex relationship between climate change and greenhouse gas emissions. 
 
 The initial status is like following:
+
+<figure class="third">
+    <img src="https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Label%20I.svg" width="80%"/><img src="https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Climate%20Change%20%20I.svg" width="80%"/> </figure>
+
 
 ![label i](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Label%20I.svg)![climate change i](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Climate%20Change%20%20I.svg)
 
