@@ -79,7 +79,7 @@ The interactive section of our website presents an in-depth look at the relation
 The initial status is like following:
 
 <figure class="third">
-    <img src="https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Label%20I.svg" width="80%"/><img src="https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Climate%20Change%20%20I.svg" width="80%"/> </figure>
+    <img src="https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Label%20I.svg" width="30"/><img src="https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Climate%20Change%20%20I.svg" width="50"/> </figure>
 
 
 ![label i](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Label%20I.svg)![climate change i](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Climate%20Change%20%20I.svg)
