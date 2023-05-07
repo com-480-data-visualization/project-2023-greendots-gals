@@ -64,6 +64,7 @@ One of our sources of inspiration is a website that presents a wide range of glo
 1. D3 Gallery
 2. Echarts
 3. Python
+4. Story telling skills (Lecture 12)
 
 ### Prototype preview
 [Here](http://htmlpreview.github.io/?https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/index.html)
