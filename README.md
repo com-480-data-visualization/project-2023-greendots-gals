@@ -110,7 +110,7 @@ In this part, the visualization will present the access to clean energy vs. GDP 
   2. The pie chart was defualt to show the information of 2022, but we could let user to choose any year's (from 1965 to 2022) information by clicking a year line.
 
 ## Milestone 3
-[Here](skye-du.github.io/GreenDots_DataViz.github.io/)
+[Here](https://skye-du.github.io/GreenDots_DataViz.github.io/)
 
 
 
