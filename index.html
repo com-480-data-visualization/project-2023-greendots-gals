@@ -1,119 +1,205 @@
-<!-- <!DOCTYPE html> --> <!-- uncomment when not on CodePen -->
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>HTML page example</title>
-  </head>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>Green energy: charts, maps and eligibility by country</title>
+        <meta name="description" content="World energy consumption and climate change visualization">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/index.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@200&display=swap" rel="stylesheet">     
+        <script src="./script/description-hover.js"></script>   
+        <script src="./script/echarts.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    </head>
+    <body>
 
-  <body>
-    <h1> Energy and Climate Change </h1>
-    
-    <div >
-    <img src="figures/earth1.png" alt="HTML interactive earth" style="width:50%"/>
-       <a href="https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/earth1.png">
-         <div class="mask rgba-white-slight"></div>
-       </a>
-    </div>
-    
-<!--     <p>replace the interavtive earth map here </p> -->
+        <div class="wave">
+            <script>
+                var wave = new Wave('body')
+                wave.animate()
+            </script>
+        </div>
+        <div class="headline">
+            <h1 class="logo-title">Global Energy Lens</h1>
+            <h4 class="logo-subtitle">Visualizing Today's Climate and Energy Dynamics</h4>
+        </div> 
+        <div class="author">
+            <p>Written By Xinyi Ding, Sijia Du, Weier Liu</p>
+        </div>
 
-    <h2>Climate change</h2>
-    
-    <div>
-      <img src="figures/Climate Change t1.svg" alt="HTML climate change 1"/>
-      <a href="https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Climate%20Change%20t1.svg">
-                 <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    
-    <div class="column">
-     <img src="figures/Climate Change t2.svg" alt="HTML climate change 2"/>
-     <a href="https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Climate%20Change%20t2.svg">
-       <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    
-    <div class="column">
-    <img src="figures/Climate Change II.svg" alt="HTML climate change 3"/>
-    <a href="https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/Climate%20Change%20II.svg">
-      <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    
-<!--     -- <p>replace the climate change line graph here </p>
- -->
-    <h2>Access to clean energy(proportion) vs. GDP per capita</h2>
-    
-     <div class="column">
-    <img src="figures/chart3.svg" alt="HTML clean energy"/>
-     <a href="https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/chart3.svg">
-       <div class="mask rgba-white-slight"></div>
-       </a>
-    </div>
-<!--     -- <p>replace the total gas emition trding line graph here </p> -->
-    
-<!-- 
-    <h2> 第三部分的图不知道要换什么</h2>
-    <img src="http://s3.amazonaws.com/chssweb/images/8637/large/palpatine-meme-generator-good-let-the-html-flow-through-you-3ba8d9.jpeg?1336762509" alt="HTML meme"/>
-    <p>replace the XXX graph here </p>
-     -->
- 
-    <h2>Country table</h2>
-    This table will be an interavtive table later
-    <table border="2">
-        <tr>
-            <th>Country</th>
-            <th>Total energy consumed</th>
-            <th>Renewable energy consumed</th>
-            <th>Percentage of renewable energy</th>
-            <th>rank</th>
-        </tr>
-        <tr>
-            <td>the US</td>
-            <td>100,000 kWh</td>
-            <td>21,000 kWh</td>
-            <td>21%</td>
-            <td>1</td>
-        </tr>
-    </table>
+        <div class="Notation" style="margin-top:50px;">
+            <h3>Note: Recommend to use larger screen to see the visualization for better effects.</h3>
+        </div>
 
-    <p> The detail of the renewable energy after clicking a specific country </p>
-     <div class="column">
-    <img src="figures/layout_of_country_details.svg" alt="HTML country details"/>
-     <a href="https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/figures/layout_of_country_details.svg">
-       <div class="mask rgba-white-slight"></div>
-       </a>
-    </div>
+        <div class="our-climate" style="margin-top:130px;">
+            <section>
+                <h4>Climate change caused by human activities</h4>
+                <p>Since the pre-industrial period, almost all observed warming (1.1 degrees Celsius/2 degrees Fahrenheit) is the result of human activities. From the temerature anomly chart, warming is obvious in recent years.
+                    In fact, the greenhouse gas emissions from human activities are projected to warm the Earth by approximately 1.5 degrees Celsius (2.7 degrees Fahrenheit), but a portion of this warming is offset by the emission of air pollutants known as aerosols, which have a cooling effect overall. The largest contributors to global warming are carbon dioxide, followed by methane and nitrous oxide.</p>
+                <p>How do we know that global warming is not caused by natural factors? Natural factors that influence global temperature changes over short periods (from years to decades) have not had a significant impact on global temperatures since the pre-industrial period. Large-scale volcanic eruptions are an example of natural variability that can temporarily lower global temperatures over a few years but do not affect long-term temperature trends. Right chart illustrates how greenhouse gases, air pollutants (aerosols), and natural factors have influenced global temperatures since 1850. Only when human-induced greenhouse gas emissions are included in climate models can they reproduce the observed temperature changes. This is one way we understand that human activities are causing climate warming.</p>
+            </section>
+        </div>
 
-    <!-- <h2>Structuring HTML</h2>
+        <div class="ccgab">
+            <div id="climate-change-intro">
+                <div id="climate-change" style="width:30%;height:325%;margin-top:10px;"></div>
+                <script type="text/javascript" src="./script/climate-change.js"></script>
+        
+                <div id="gmst" style="width: 28%;height:280%;margin-top:5px;"></div>
+                <select id="lineSelect">
+                    <option value="all">All</option>
+                    <option value="line1">Combined(Human & natural causes)</option>
+                    <option value="line2">Greenhouse gases(human)</option>
+                    <option value="line3">Aerosols(Human)</option>
+                    <option value="line4">Natural casuses</option>
+                </select>
+                <script type="text/javascript" src="./script/gmst_anomalies_timeseries.js"></script>  
+            </div>
+            <p class="footnote">Note: Humans are responsible for climate warming. Climate model simulations (shaded areas) can only reproduce the observed global temperature changes (black line) when human-induced emissions are included. This graph illustrates global temperature changes from climate model simulations, including: greenhouse gases only (red), aerosols (air pollutants) and other anthropogenic drivers only (blue), natural factors only (green), or a combination of all factors (gray). Combination = natural factors + aerosols + greenhouse gases. Solid/dashed lines represent the average of all models, while shaded areas indicate the range of simulation uncertainties. Data from the IPCC Sixth Assessment Report.</p>          
+        </div>
 
-    <div>div tags are a division of a page. A central structural element of any HTML page.</div>
-    <div>divs are block elements, i.e., they break lines.</div>
+        <div class="co2-emission" style="margin-top:130px;">
+            <section>
+                <h4>Where do global greenhouse gas emissions come from?</h4>
+                <p>To prevent severe climate change we need to rapidly reduce global greenhouse gas emissions. The world emits around 50 billion tonnes of greenhouse gases each year [measured in carbon dioxide equivalents (CO2eq)].</p>
+                <p>To figure out how we can most effectively reduce emissions and what emissions can and can't be eliminated with current technologies, we need to first understand where our emissions come from.</p>
+                <p>The following chart is an important one that shows the breakdown of global greenhouse gas emissions in 2016. This is the latest breakdown of global emissions by sector, published by Climate Watch and the World Resources Institute.</p>
+                <p>The overall picture you see from this diagram is that almost three-quarters of emissions come from energy use; almost one-fifth from agriculture and land use  [this increases to one-quarter when we consider the food system as a whole – including processing, packaging, transport and retail]; and the remaining 8% from industry and waste.</p>
+            </section>
+        </div>
 
-    <span>span is similar to div, but works as an inline element, </span>
-    <span>i.e., it can be used in the same line.</span>
+        <div class="green-intro">
+            <div>
+                <div id="greenhouse-gas-emission" style="width: 550px;height:800px;margin-top:50px;"></div>
+                <script type="text/javascript" src="./script/greenhouse-gas-emission-by-sector.js"></script>
+            </div>
+            <p class="footnote">Note: You can click on the sectors in the chart to see more details and click center "Propotion" to go back</p>
+        </div>
 
 
-    <h2>Forms</h2>
-    Forms consist of an enclosing form tag and may contain input, textarea and other tags.
-    Learn about forms <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form">here</a> -->
+        <div class="eenrin" style="margin-top:130px;">
+            <section>
+                <h4>Income is a strong determinant of access for clean energy</h4>
+                <p>Using clean energy can help to reduce CO2 emissions. Clean energy sources, such as solar, wind, hydroelectric, and geothermal power, do not release carbon dioxide when generating electricity. By transitioning from fossil fuels, which are major contributors to CO2 emissions, to clean energy sources, we can significantly reduce the amount of CO2 released into the atmosphere.</p>
+                <p>Income is a strong determinant of energy access and types of fuel sources. In the figure we see the World Health Organization (WHO)'s depiction of the 'energy ladder'. It shows how the dominant source of energy changes depending on the level of income.</p>
+                <p>At low income levels households rely mostly on solid traditional fuel sources such as crop waste, dung, and firewood. As incomes rise, this energy mix tends to transition towards charcoal and coal. Only at higher income levels do households shift from the harmful solid fuels to cleaner non-solid fuels such as ethanol and natural gas. Electricity is only available for households at a high income level.</p>
+            </section>
+        </div>
 
-<!--     where your server will process the form -->
-    <!-- <form action="/my-handling-form-page" method="post">
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name">
-    </div>
-    <div>
-        <label for="mail">E-mail:</label>
-        <input type="email" id="mail" name="user_mail">
-    </div>
-    <div>
-        <label for="msg">Message:</label>
-        <textarea id="msg" name="user_message"></textarea>
-    </div>
-</form> -->
+        <div class="energy-and-income" style="width:80%;margin-top:20px;">
+            <section class="chart">
+                <div>
+                    <img src="imgs/touch-icon.svg" style="display:block;width:33px;height:24px"/>
+                    <svg width="1000" height="600" viewbox="-500,-0,1600,1000" preserveAspectRatio="xMinYMid meet">
+                        <g class="basics">
+                            <rect width="800" height="550" fill="white" opacity="0%"/>
+                            <line x1="200" y1="0" x2="200" y2="540" stroke="white" stroke-dasharray="5,5"></line>
+                            <line x1="400" y1="0" x2="400" y2="540" stroke="white" stroke-dasharray="5,5"></line>
+                            <line x1="600" y1="0" x2="600" y2="540" stroke="white" stroke-dasharray="5,5"></line>
+                            <text x="15" y="535" font-size="24" fill="white", opacity="80%">Very low income</text>
+                            <text x="240" y="535" font-size="24" fill="white", opacity="80%">Low income</text>
+                            <text x="425" y="535" font-size="24" fill="white", opacity="80%">Middle income</text>
+                            <text x="625" y="535" font-size="24" fill="white", opacity="80%">High income</text>
+                            <path d="M 800 70 A 5 5 0 0 1 805 75 M 805 75 L 805 190 M 805 190 A 5 5 0 0 0 812 195 M 812 197 A 5 5 1 0 0 805 200
+                                    M 805 200 L 805 326 M 805 326 A 5 5 0 0 1 800 331" fill="rgba(0, 0, 0, 0)" stroke="white" opacity="40%" stroke-width="2"/>   
+                            <path d="M 800 335 A 5 5 0 0 1 805 340 M 805 340 L 805 405 M 805 405 A 5 5 0 0 0 812 410 M 812 412 A 5 5 1 0 0 805 418
+                                    M 805 417 L 805 495 M 805 495 A 5 5 0 0 1 800 500" fill="rgba(0, 0, 0, 0)" stroke="white" opacity="40%" stroke-width="2"/>
+                            <text x="830" y="205" fill="#FF8C69" font-size="32">Fossil fuels</text>   
+                            <text x="830" y="405" fill="#5D478B" font-size="32">Traditional</text> 
+                            <text x="830" y="440" fill="#5D478B" font-size="32">Biomass fuels</text>  
+                        </g>
+                        <g class="fossil-fuels">
+                            <rect x="405" y="0" width="390" height="220" rx="10" ry="10" fill="white" opacity="20%"></rect>
+                            <rect x="610" y="5" rx="10" ry="10" width="180" height="60" fill="#a3be8c" opacity="70%"/>
+                            <text x="625" y="48" font-size="36" fill="white", opacity="80%">Electricity</text>
+                            <rect x="610" y="70" rx="10" ry="10" width="180" height="45" fill="#FF8C69" opacity="40%"/>
+                            <text x="630" y="101" font-size="28" fill="white", opacity="80%">Natural gas</text>
+                            <rect x="410" y="120" rx="10" ry="10" width="380" height="45" fill="#FF8C69" opacity="40%"/>
+                            <text x="425" y="152" font-size="28" fill="white", opacity="80%">Gas, Liquefied petroleum gas</text>
+                            <rect x="410" y="170" rx="10" ry="10" width="380" height="45" fill="#FF8C69" opacity="40%"/>
+                            <text x="490" y="201" font-size="28" fill="white", opacity="80%">Ethanol, Methanol</text>
+                            <g class="description-2">
+                                <text x="200" y="30" fill="#F5DEB3" font-size="34" opacity="60%">Clean energy</text>
+                                <text x="210" y="65" fill="#F5DEB3" font-size="18" opacity="40%" font-family="Verdana">Energy sources that</text>
+                                <text x="210" y="90" fill="#F5DEB3" font-size="18" opacity="40%" font-family="Verdana">do not cause harmful</text>
+                                <text x="210" y="115" fill="#F5DEB3" font-size="18" opacity="40%" font-family="Verdana">ari pollution within </text>
+                                <text x="210" y="145" fill="#F5DEB3" font-size="18" opacity="40%" font-family="Verdana">the household</text>
+                                <text x="810" y="20" fill="#F5DEB3" font-size="18" opacity="40%" font-family="Verdana">If produced from renewable or</text>
+                                <text x="810" y="45" fill="#F5DEB3" font-size="18" opacity="40%" font-family="Verdana">nuclear energy, electricity is a</text>
+                                <text x="810" y="70" fill="#F5DEB3" font-size="18" opacity="40%" font-family="Verdana">clean, low-carbon energy source.</text>
+                                <text>If produced from renewable or</text>
+                            </g>
+                        </g>
+                            <rect x="410" y="227" rx="10" ry="10" width="180" height="45" fill="#FF8C69" opacity="40%"/>
+                            <text x="445" y="258" font-size="28" fill="white", opacity="80%">Kerosene</text>
+                        <g class="traditional-fuels">
+                            <rect x="5" y="280" width="590" height="220" rx="10" ry="10" fill="white" opacity="20%"></rect>
+                            <rect x="410" y="285" rx="10" ry="10" width="180" height="45" fill="#FF8C69" opacity="40%"/>
+                            <text x="470" y="317" font-size="28" fill="white", opacity="80%">Coal</text>
+                            <rect x="210" y="335" rx="10" ry="10" width="380" height="45" fill="#5D478B" opacity="40%"/>
+                            <text x="340" y="367" font-size="28" fill="white", opacity="80%">Charcoal</text>
+                            <rect x="10" y="385" rx="10" ry="10" width="580" height="60" fill="#5D478B" opacity="40%"/>
+                            <text x="250" y="429" font-size="40" fill="white", opacity="80%">Wood</text>
+                            <rect x="10" y="450" rx="10" ry="10" width="180" height="45" fill="#5D478B" opacity="40%"/>
+                            <text x="21" y="481" font-size="20" fill="white", opacity="80%">Crop waste, Dung</text>
+                            <g class="description-1">
+                                <text x="0" y="195" fill="#F5DEB3" font-size="34" opacity="60%">Solid fuels</text>
+                                <text x="10" y="220" fill="#F5DEB3" font-size="18" opacity="40%" font-family="Verdana">The energy sources</text>
+                                <text x="10" y="245" fill="#F5DEB3" font-size="18" opacity="40%" font-family="Verdana">that cause indoor</text>
+                                <text x="10" y="270" fill="#F5DEB3" font-size="18" opacity="40%" font-family="Verdana">air poluttion</text>
+                            </g>
+                        </g>  
+                    </svg>
+                </div>
+            </section>
+        </div>
 
+        <div class="bpeinc" style="margin-top:130px;">
+            <section>
+                <h4>Poorer households have a higher dependence on solid fuels</h4>
+                <p>The latest data on this relationship between fuel type and income is shown in the scatterplot. It shows the percentage of households in countries around the world with access to clean fuels and technologies for cooking (on the y-axis) versus the average income in the country.</p>
+                <p>The share of households with access to clean energy in countries below a GDP per capita level of $2,000 per year is typically less than 10%. As countries begin to bridge that gap between low and middle incomes, this share begins to increase until a final transition towards high-income where the majority of households have clean fuels and technologies for cooking.</p>
+                <p>It is important to address the disparity in access to clean energy, particularly for lower-income households, as improving access to clean energy sources can have significant benefits for both the environment and human health.</p>
+                <p>You can click on continent buttons to see the change of the proportions of clean energy acess over time in a country level.
+            </section>
+        </div>        
+            
+        <div id="income">
+            <div id="button-energy-income">
+                <button class="continent all" data-target="energy_and_income_viz">All</button>
+                <button class="continent africa" data-target="Africa-energy-income">Africa</button>
+                <button class="continent asia" data-target="Asia-energy-income">Asia</button>
+                <button class="continent europe" data-target="Europe-energy-income">Europe</button>
+                <button class="continent north-america" data-target="North-America-energy-income">North America</button>
+                <button class="continent oceania" data-target="Oceania-energy-income">Oceania</button>
+                <button class="continent south-america" data-target="South-America-energy-income">South America</button>
+            </div>
 
-  </body>
+            <div id="energy_and_income_viz" class="myContinent" style="width: 60%;height:500%;margin-top:100px;"></div>
+            <script type="text/javascript" src="./script/clean-fuels-cooking.js"></script>
+
+            <div id="Africa-energy-income" class="myContinent" style="width: 700%;height:500%;margin-top:100px;display:none;"></div>
+            <script type="text/javascript" src="./script/clean-fuels-cooking-africa.js"></script>
+
+            <div id="Asia-energy-income" class="myContinent" style="width: 700%;height:500%;margin-top:100px;display:none;"></div>
+            <script type="text/javascript" src="./script/clean-fuels-cooking-asia.js"></script>
+
+            <div id="Europe-energy-income" class="myContinent" style="width: 700%;height:500%;margin-top:100px;display:none;"></div>
+            <script type="text/javascript" src="./script/clean-fuels-cooking-europe.js"></script>
+
+            <div id="North-America-energy-income" class="myContinent" style="width: 700%;height:500%;margin-top:100px;display:none;"></div>
+            <script type="text/javascript" src="./script/clean-fuels-cooking-north-america.js"></script>
+
+            <div id="Oceania-energy-income" class="myContinent" style="width: 700%;height:500%;margin-top:100px;display:none;"></div>
+            <script type="text/javascript" src="./script/clean-fuels-cooking-oceania.js"></script>
+
+            <div id="South-America-energy-income" class="myContinent" style="width: 700%;height:500%;margin-top:100px;display:none;"></div>
+            <script type="text/javascript" src="./script/clean-fuels-cooking-south-america.js"></script>
+        </div>>
+
+    </body>
 </html>
