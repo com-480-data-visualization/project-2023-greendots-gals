@@ -113,12 +113,6 @@ In this part, the visualization will present the access to clean energy vs. GDP 
 [Here](https://skye-du.github.io/GreenDots_DataViz.github.io/)
 
 
-
-## Milestone 3 (4th June, 5pm)
-
-**80% of the final grade**
-
-
 ## Late policy
 
 - < 24h: 80% of the grade for the milestone
