@@ -109,6 +109,10 @@ In this part, the visualization will present the access to clean energy vs. GDP 
   1. The table of countries is sorted defualt by the total amount of energy. To extend, we could let user to chose to sort by any of the three features.
   2. The pie chart was defualt to show the information of 2022, but we could let user to choose any year's (from 1965 to 2022) information by clicking a year line.
 
+## Milestone 3
+[Here](https://github.com/Skye-Du/GreenDots_DataViz.github.io)
+
+
 
 ## Milestone 3 (4th June, 5pm)
 
