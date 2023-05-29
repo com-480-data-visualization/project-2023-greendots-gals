@@ -1,0 +1,375 @@
+body {
+    background: #414751;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+.headline {
+    text-align: center;
+    margin: 36px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+
+.headline h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin: -10px 10 0 6px;
+    letter-spacing: .35rem;
+    color: #fff;
+    font-weight:200;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    position: relative;
+    font-family: Knowledge,Source Sans Pro,Arial,sans-serif;
+}
+
+.headline h4 {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    margin: -2px 0 0;
+    letter-spacing: .16rem;
+    color: #a3be8c;
+    font-weight: 400;
+    font-family: Knowledge,Source Sans Pro,Arial,sans-serif;
+}
+
+.author p {
+    text-align: center;
+    font-size: 1rem;
+    font-family: Knowledge,Source Sans Pro,Arial,sans-serif;
+    line-height: 28px;
+    letter-spacing: .4px;
+    font-weight: 300;
+    color: hsla(0,0%,100%,.75);
+    transition: all .2s;
+}
+.Notation {
+  text-align: center;
+}
+
+.Notation h3 {
+  display: inline-block;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: -10px auto 0;  
+  letter-spacing: .1rem;
+  color: #fff;
+  font-weight: 200;
+  font-family: 'Ysabeau', sans-serif;
+  border: 2px solid #a3be8c;
+  border-radius: 5px;
+  width: 30%;
+}
+
+
+.our-climate {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    font-family:'Ysabeau', sans-serif;
+}
+
+.our-climate h4 {
+  font-size: 1.5rem
+}
+.our-climate p {
+  font-size: 1.3rem
+}
+.climate-change-intro p.footnote {
+  /* max-width: 650px; */
+  position: relative;
+  margin: 10px auto 0;
+  left:-10%;
+  /* text-align: ; */
+  font-size: 15px;
+  line-height: 20px;
+  line-height: 1.1rem;
+  color: #D3D3D3;
+}
+
+.co2-emission {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  font-family:'Ysabeau', sans-serif;
+}
+
+.co2-emission h4 {
+font-size: 1.5rem
+}
+.co2-emission p {
+font-size: 1.3rem
+}
+.green-intro p.footnote {
+  /* max-width: 650px; */
+  position: relative;
+  margin: 10px auto 0;
+  left:30%;
+  /* text-align: ; */
+  font-size: 15px;
+  line-height: 20px;
+  line-height: 1.1rem;
+  color: #D3D3D3;
+  font-family:'Ysabeau', sans-serif;
+}
+
+.eenrin {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  font-family:'Ysabeau', sans-serif;
+}
+
+.eenrin h4 {
+font-size: 1.5rem
+}
+.eenrin p {
+font-size: 1.3rem
+}
+
+.bpeinc {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  font-family:'Ysabeau', sans-serif;
+}
+
+.bpeinc h4 {
+font-size: 1.5rem
+}
+.bpeinc p {
+font-size: 1.3rem
+}
+
+
+.energy-and-income {
+	text-align: center; /*让div内部文字居中*/
+	background-color: #ffffff00;
+	border-radius: 20px;
+  font-family: Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+	width: 20%;
+	height: 20%;
+	position: relative;
+	top: auto;
+	left: 7%;
+	right: 0;
+	bottom: auto;
+}
+
+
+.description-1 {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.description-2 {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.chart img{     
+  position:relative; 
+  left:37%;
+  top:23px;
+  }
+
+.chart svg{
+  margin-bottom: -250px;
+  padding-bottom: -10px;
+  position: relative;
+  /* bottom: px; */
+}
+
+.ccgab p.footnote {
+    max-width: 550px;
+    position: relative;
+    margin: 20px auto 0;
+    left:15%;
+    /* text-align: ; */
+    font-size: 13px;
+    line-height: 20px;
+    line-height: 1.1rem;
+    color: #D3D3D3;
+    font-size: 0.9rem;
+    font-family:'Ysabeau', sans-serif;
+}
+
+#greenhouse-gas-emission {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+}
+
+#climate-change{
+  position: relative;
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  left: 20%;
+  top: 58px
+}
+
+#gmst {
+  position: relative;
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  top: 12px;
+  left: 20%;
+}
+
+#energy_and_income_viz {
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  border:1px #a3be8c dashed;
+  font-size: 0.75rem;
+  padding: 2px 5px;
+  width: 5%;
+  height: 20px;
+  position: relative;
+  right: -20%;
+  top: -225px;
+  opacity: 60%;
+}
+
+#Africa-energy-income {
+  position: relative;
+  overflow: hidden;
+  top: 12px;
+  left: 8%
+}
+
+#Asia-energy-income {
+  position: relative;
+  overflow: hidden;
+  top: 12px;
+  left: 8%
+}
+
+#Europe-energy-income {
+  position: relative;
+  overflow: hidden;
+  top: 12px;
+  left: 8%
+}
+
+#North-America-energy-income {
+  position: relative;
+  overflow: hidden;
+  top: 12px;
+  left: 8%
+}
+
+#Oceania-energy-income {
+  position: relative;
+  overflow: hidden;
+  top: 12px;
+  left: 8%
+}
+
+#South-America-energy-income {
+  position: relative;
+  overflow: hidden;
+  top: 12px;
+  left: 8%
+}
+
+#climate-change-intro {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  margin: auto;
+}
+
+#button-energy-income {
+  display: flex;
+  flex-direction: row;
+}
+
+#button-energy-income button {
+  position: relative;
+  left: 14%;
+  top: 60px;
+  margin-right: 2px;  
+  width: 70px;
+  font-size: 0.7rem;
+  color: #FFFFF0;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  border: none;
+  font-family: Arial;
+}
+
+.continent {
+  margin-bottom: 10px;
+}
+
+#income {
+  /* display: flex; */
+  justify-content: center; /* 水平居中 */
+  align-items: center;
+  position: relative;
+  left: 20%;
+}
+
+.continent.all {
+  background-color: rgba(241, 241, 241, 0.5);
+}
+.continent.all:active{
+  background-color: rgba(241, 241, 241, 0.1);
+}
+
+.continent.africa {
+  background-color: rgba(81, 104, 155, 0.6);
+}
+.continent.africa:active {
+  background-color: rgba(81, 104, 155, 0.1);
+}
+
+.continent.asia {
+  background-color: rgba(206, 92, 92, 0.6);
+}
+.continent.asia:active {
+  background-color: rgba(206, 92, 92, 0.1);
+}
+
+.continent.europe {
+  background-color: rgba(251, 195, 87, 0.6);
+}
+.continent.europe:active {
+  background-color: rgba(251, 195, 87, 0.1);
+}
+
+.continent.north-america {
+  background-color: rgba(143, 191, 143, 0.6);
+}
+.continent.north-america:active {
+  background-color: rgba(143, 191, 143, 0.1);
+}
+
+.continent.oceania {
+  background-color: rgba(101, 157, 132, 0.6);
+}
+.continent.oceania:active {
+  background-color: rgba(101, 157, 132, 0.1);
+}
+
+.continent.south-america {
+  background-color: rgba(251, 142, 106, 0.6);
+}
+.continent.south-america:active {
+  background-color: rgba(251, 142, 106, 0.1);
+}
