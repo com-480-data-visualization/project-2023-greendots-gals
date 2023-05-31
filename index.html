@@ -9,12 +9,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@200&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script src="./script/wave.js"></script>    
         <script src="./script/description-hover.js"></script>   
         <script src="./script/echarts.js"></script>
+        <script src="./script/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     </head>
     <body>
 
@@ -201,6 +201,192 @@
             <div id="South-America-energy-income" class="myContinent" style="width: 700%;height:500%;margin-top:100px;display:none;"></div>
             <script type="text/javascript" src="./script/clean-fuels-cooking-south-america.js"></script>
         </div>>
+
+        <div class="bpeinc" style="margin-top:130px;">
+            <section>
+                <h4>Green Energy Future</h4>
+                <p>Green energy represents a powerful tool for reducing CO2 emissions. 
+                    Not only does it curtail the burning of fossil fuels, but it also enables societies to operate with a much lighter carbon footprint. 
+                    With the dual threats of global warming and environmental degradation, it's critical that humanity transitions to cleaner, more sustainable energy sources. 
+                    Green energy, which includes solar, wind, hydro, and solar, among others, can significantly decrease our reliance on carbon-emitting fuels, 
+                    subsequently mitigating their deleterious environmental impacts.
+                </p>
+                <p>However, the development and adoption of green energy varies widely across different nations, 
+                    each characterized by their unique circumstances, resources, and geopolitical realities. 
+                    Hence, the journey towards green energy isn't a one-size-fits-all solution; it must be tailored to the specific conditions of each country.
+                </p>
+                <p>By examining the specifics of different countries, especially those with the highest energy consumption, 
+                    we can gain valuable insights on how to expedite our transition towards a greener future. 
+                    Countries like China, the United States, and India, which together account for a large percentage of global energy consumption, 
+                    offer case studies in the challenges and opportunities associated with green energy transition. 
+                    Understanding these particulars can inform policymakers and stakeholders in devising effective, adaptable, and responsive strategies, 
+                    setting us on a more defined and promising path to a sustainable, low-carbon future.
+                </p>
+                <p>The following table shows the summary of green energy and energy consumption of the top 5 most energy consuption country. 
+                    You can click the row to see details.
+                </p>
+            </section>
+        </div>
+
+        <div class="green-energy-table" style="margin-top:50px;">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="tg-m4pi">Country (region)</th>
+                        <th class="tg-m4pi">Annual <br> Consumption</th>
+                        <th class="tg-m4pi">Green Energy <br> Consumption</th>
+                        <th class="tg-m4pi">Percentage of <br> Green Energy</th>
+                        <th class="tg-m4pi">Rank</th>
+                    </tr>
+                </thead>
+
+                <tr class="click-tr">
+                    <td><p>China</p></td>
+                    <td><p>43,791 TWh</p></td>
+                    <td><p>6,547 TWh</p></td>
+                    <td>
+                        <p>14.95%</p>
+                    </td>
+                    <td><p>1</p></td>
+                </tr>
+                <tr><td colspan="5">
+                    <div class="country-detail">
+                        <p>
+                            <strong>China</strong> consumed <strong>43,791 TWh</strong> in 2021.
+                            Compared to 1965, it has grown <strong>+2,751%</strong>.
+                            Specifically, in 2021, green energy was consumed <strong>6,547 TWh</strong>, 
+                            which is about <strong>14.95%</strong> of total energy consumption.
+                        </p>
+
+                        <div class="country-green-energy-all" style="width:80%;margin-top:5px;">
+                            <div id="gepie-china" style="width: 80%;height:330%;margin-top:5px;margin-bottom:5px;"></div>
+                            <script type="text/javascript" src="./script/green-energy-pie-china.js"></script>
+                        </div>
+
+                    </div>
+                </td></tr>
+
+                <tr class="click-tr">
+                    <td><p>United States</p></td>
+                    <td><p>25,825 TWh</p></td>
+                    <td><p>2,753 TWh</p></td>
+                    <td><p>10.66%</p></td>
+                    <td><p>2</p></td>
+                </tr>
+                <tr><td colspan="5">
+                    <div class="country-detail">
+                        <p>
+                            The <strong>United States</strong> consumed <strong>25,825 TWh</strong> in 2021.
+                            Compared to 1965, it has grown <strong>+79%</strong>.
+                            Specifically, in 2021, green energy was consumed <strong>2,753 TWh</strong>, 
+                            which is about <strong>10.66%</strong> of total energy consumption.
+                        </p>
+
+                        <div class="country-green-energy-all" style="width:80%;margin-top:5px;">
+                            <div id="gepie-US" style="width: 80%;height:330%;margin-top:5px;margin-bottom:5px;"></div>
+                            <script type="text/javascript" src="./script/green-energy-pie-US.js"></script>
+                        </div>
+
+                    </div>
+                </td></tr>
+                
+                <tr class="click-tr">
+                    <td><p>India</p></td>
+                    <td><p>9,841 TWh</p></td>
+                    <td><p>916 TWh</p></td>
+                    <td><p>9.31%</p></td>
+                    <td><p>3</p></td>
+                </tr>
+                <tr><td colspan="5">
+                    <div class="country-detail">
+                        <p>
+                            <strong>India</strong> consumed <strong>9,841 TWh</strong> in 2021.
+                            Compared to 1965, it has grown <strong>+1,489%</strong>.
+                            Specifically, in 2021, green energy was consumed <strong>916 TWh</strong>, 
+                            which is about <strong>9.31%</strong> of total energy consumption.
+                        </p>
+
+                        <div class="country-green-energy-all" style="width:80%;margin-top:5px;">
+                            <div id="gepie-india" style="width: 80%;height:330%;margin-top:5px;margin-bottom:5px;"></div>
+                            <script type="text/javascript" src="./script/green-energy-pie-India.js"></script>
+                        </div>
+
+                    </div>
+                </td></tr> 
+                
+                <tr class="click-tr">
+                    <td><p>Russia</p></td>
+                    <td><p>8,694 TWh</p></td>
+                    <td><p>539 TWh</p></td>
+                    <td><p>6.62%</p></td>
+                    <td><p>4</p></td>
+                </tr>
+                <tr><td colspan="5">
+                    <div class="country-detail">
+                        <p>
+                            <strong>Russia</strong> consumed <strong>8,694 TWh</strong> in 2021.
+                            Compared to 1985, it has grown <strong>-9%</strong>.
+                            Specifically, in 2021, green energy was consumed <strong>539 TWh</strong>, 
+                            which is about <strong>6.62%</strong> of total energy consumption.
+                        </p>
+
+                        <div class="country-green-energy-all" style="width:80%;margin-top:5px;">
+                            <div id="gepie-russia" style="width: 80%;height:330%;margin-top:5px;margin-bottom:5px;"></div>
+                            <script type="text/javascript" src="./script/green-energy-pie-russia.js"></script>
+                        </div>
+
+                    </div>
+                </td></tr> 
+
+                <tr class="click-tr">
+                    <td><p>Japan</p></td>
+                    <td><p>4,928 TWh</p></td>
+                    <td><p>563 TWh</p></td>
+                    <td><p>11.43%</p></td>
+                    <td><p>5</p></td>
+                </tr>
+                <tr><td colspan="5">
+                    <div class="country-detail">
+                        <p>
+                            <strong>Japan</strong> consumed <strong>4,928 TWh</strong> in 2021.
+                            Compared to 1965, it has grown <strong>+170%</strong>.
+                            Specifically, in 2021, green energy was consumed <strong>563 TWh</strong>, 
+                            which is about <strong>11.43%</strong> of total energy consumption.
+                        </p>
+
+                        <div class="country-green-energy-all" style="width:80%;margin-top:5px;">
+                            <div id="gepie-japan" style="width: 80%;height:330%;margin-top:5px;margin-bottom:5px;"></div>
+                            <script type="text/javascript" src="./script/green-energy-pie-japan.js"></script>
+                        </div>
+
+                    </div>
+                </td></tr> 
+            </table>
+            <script type="text/javascript" src="./script/green-energy-countries.js"></script>
+        </div>
+
+        <div class="bpeinc" style="margin-top:50px;">
+            <section>
+                <p>
+                    From the above table we could see that most energy-consuming countries have a relatively low level of development in terms of their green energy sectors.
+                    While there have been strides in recent years to incorporate more renewable energy sources into their energy grids, 
+                    the proportion of green energy used in these countries remains substantially lower than it could be. 
+                    This gap represents both a significant challenge and an opportunity for these countries to take the lead in the global transition to sustainable energy sources.
+                </p>
+                <p>
+                    Indeed, these high-energy-consuming countries should place greater emphasis on the development and deployment of green energy technologies. 
+                    Investing more in renewable energy is not only environmentally responsible but also economically strategic. 
+                    As the world progressively shifts towards sustainable practices, a substantial green energy sector could be a significant source of job creation, 
+                    technological innovation, and economic growth. By fostering an environment conducive to green energy research and development, 
+                    these nations can also position themselves at the forefront of this burgeoning sector. 
+                    Governments can incentivize this shift through various means such as subsidies for renewable energy projects, 
+                    regulations to phase out fossil fuels, and public education to encourage sustainable consumption practices. 
+                    The transition to a greener future is both a necessity and an opportunity; 
+                    thus, ramping up investments in green energy is paramount.
+                </p>
+                
+            </section>
+        </div>
 
     </body>
 </html>
