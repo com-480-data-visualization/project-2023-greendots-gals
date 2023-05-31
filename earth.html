@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>World Tour</title>
+<link rel="stylesheet" type="text/css" href="./css/inspector.css">
+<body>
+
+
+    <div id="earth"></div>
+    <div id="name"></div>
+    <script type="module">
+    import {Runtime, Inspector} from "./script/runtime.js";
+    import define from "./script/rotating-earth.js";
+    new Runtime().module(define, name => {
+    if (name === "canvas") return new Inspector(document.querySelector("#earth"));
+    });
+    </script>
