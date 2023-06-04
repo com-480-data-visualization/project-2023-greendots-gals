@@ -9,13 +9,11 @@
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
 ## Milestone 1
-[Milestone 1](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/Milestone1.md)
+This is [Milestone 1](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/Milestone1.md)
 
 
 
 ## Milestone 2
-
-**10% of the final grade**
 ### Tools:
 1. Web development skills and designing skills (lecture 1, 8)
 2. D3 Gallery (lecture 4, 5)
