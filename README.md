@@ -110,7 +110,16 @@ In this part, the visualization will present the access to clean energy vs. GDP 
   2. The pie chart was defualt to show the information of 2022, but we could let user to choose any year's (from 1965 to 2022) information by clicking a year line.
 
 ## Milestone 3
-[Here](https://com-480-data-visualization.github.io/project-2023-greendots-gals/)
+- Website: Click [here](https://skye-du.github.io/GreenDots_DataViz.github.io/)
+- Process book: Click Here (上传后加一下)
+- Technical Implementation: (这是我从其他人那复制过来的，4、5两步不知道干啥)
+  To run the website locally, you need to follow the steps:
+1. Clone the following repository: https://github.com/Skye-Du/GreenDots_DataViz.github.io.git
+2. run npm install to install required dependencies
+3. run npm run dev to start development server
+4. For VS code users, to view the web correctly, please install a live server extension.
+
+
 
 
 ## Late policy
