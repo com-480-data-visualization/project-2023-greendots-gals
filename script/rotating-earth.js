@@ -4,7 +4,7 @@ async function* _canvas(DOM,width,height,d3,sphere,land,borders,countries,$0,til
   const projection = d3.geoOrthographic().fitExtent([[10, 10], [width - 10, height - 10]], sphere);
   const path = d3.geoPath(projection, context);
   const canvas = context.canvas;
-  let consumptionType = 'consPer';
+  let consumptionType = 'consTotal';
 
   function getColor(consPer, consTotal) {
     if (consumptionType === 'consPer') {
@@ -18,12 +18,13 @@ async function* _canvas(DOM,width,height,d3,sphere,land,borders,countries,$0,til
       } else { return "#00080";
       } 
     } else if (consumptionType === 'consTotal') {
-        if (consTotal < 500) { return "#9ed6e180";
-      } else if (consPer < 1000) { return "#77c5d580";
-      } else if (consPer < 2500) { return "#50b4c880";
-      } else if (consPer < 5000) { return "#379baf80";
-      } else if (consPer < 10000) { return "#2a788880";
-      } else if (consPer < 50000) {return "#1e566180";
+        if (consTotal < 100) { return "#ebfaef80";
+      } else if (consTotal < 500) { return "#c2efce80";
+      } else if (consTotal < 1000) { return "#9ae5ae80";
+      } else if (consTotal < 2500) { return "#71da8d80";
+      } else if (consTotal < 5000) { return "#2fb65380";
+      } else if (consTotal < 10000) {return "#258e4180";
+      } else if (consTotal < 50000) {return "#1a652e80";
       } else { return "#00080";
       } 
     }
@@ -62,7 +63,7 @@ async function* _canvas(DOM,width,height,d3,sphere,land,borders,countries,$0,til
     const fillColor = getColor(consPer, consTotal);
     country.properties.fillColor = fillColor;
 
-    mutableCountryInfo.value = `${country.properties.name}, consumption per person in 2019 is ${consPer} kwh.`;
+    mutableCountryInfo.value = `${country.properties.name}, total energy consumption in 2019 is ${consTotal} twh.`;
 
     $0.value = country.properties.name;
     yield render(country);
@@ -217,4 +218,3 @@ export default function define(runtime, observer) {
   main.variable(observer("d3")).define("d3", ["require"], _d3);
   return main;
 }
-
