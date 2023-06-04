@@ -112,8 +112,8 @@ In this part, the visualization will present the access to clean energy vs. GDP 
 ## Milestone 3
 - Website: Click [here](https://skye-du.github.io/GreenDots_DataViz.github.io/)
 - Process book: Click Here (上传后加一下)
-- Technical Implementation: (这是我从其他人那复制过来的，4、5两步不知道干啥)
-  To run the website locally, you need to follow the steps:
+- Technical Implementation: (这是我从其他人那复制过来的，4、5两步不知道干啥) \\
+\tab  To run the website locally, you need to follow the steps:
 1. Clone the following repository: https://github.com/Skye-Du/GreenDots_DataViz.github.io.git
 2. run npm install to install required dependencies
 3. run npm run dev to start development server
