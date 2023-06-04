@@ -4,13 +4,52 @@
 <link rel="stylesheet" type="text/css" href="./css/inspector.css">
 <body>
 
+    <div id="sentence"></div>
+    <div id="earth"  style="margin-top:20px;"></div>
+    
+    <div id="color-bar-container" style="margin-top:20px;">
+        <div id="color-bar"></div>
+    </div>
 
-    <div id="earth"></div>
-    <div id="name"></div>
     <script type="module">
     import {Runtime, Inspector} from "./script/runtime.js";
     import define from "./script/rotating-earth.js";
+    class ValueOnlyInspector {
+        constructor(node) {
+            this._node = node;
+        }
+    
+        fulfilled(value) {
+            this._node.textContent = value;
+        }
+        
+        rejected(error) {
+            console.error(error);
+        }
+    }
+
     new Runtime().module(define, name => {
-    if (name === "canvas") return new Inspector(document.querySelector("#earth"));
+        if (name === "canvas") return new Inspector(document.querySelector("#earth"));
+        if (name === "countryInfo") return new ValueOnlyInspector(document.querySelector("#sentence"));
+        
     });
+
+    const colorBar = document.querySelector("#color-bar");
+
+    const colorRanges = [
+        { color: '#ebfaef80', label: '1000' },
+        { color: '#c2efce80', label: '2000' },
+        { color: '#9ae5ae80', label: '5000' },
+        { color: '#71da8d80', label: '10000' },
+        { color: '#2fb65380', label: '20000' },
+        { color: '#258e4180', label: '50000' },
+        { color: '#1a652e80', label: '>50000' },
+    ];
+    for (let range of colorRanges) {
+        const div = document.createElement('div');
+        div.classList.add('color-bar-item');
+        div.style.backgroundColor = range.color;
+        div.textContent = range.label;
+        colorBar.appendChild(div);
+    }
     </script>
