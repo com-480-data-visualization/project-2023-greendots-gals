@@ -460,3 +460,14 @@ font-family:'Ysabeau', sans-serif;
   border: none;
   overflow: auto;
 }
+
+.ending p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: .4px;
+  color: hsla(0, 0%, 100%, 0.67);
+  font-family: Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+}

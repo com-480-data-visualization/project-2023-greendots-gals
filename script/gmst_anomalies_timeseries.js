@@ -1,6 +1,6 @@
-var chartDom = document.getElementById('gmst');
-var myChart = echarts.init(chartDom);
-var option;
+var chartDom_gmst = document.getElementById('gmst');
+var myChart_gmst = echarts.init(chartDom_gmst);
+var option_gmst;
 var lineSelect = document.getElementById('lineSelect');
 
 $.get('./data/lines.json', function (data) {
@@ -55,7 +55,7 @@ $.get('./data/lines.json', function (data) {
         return Math.floor(Math.min(min, val.l_4));
       }, Infinity);
       
-    myChart.setOption(Object.assign({}, commonOptions, {
+    myChart_gmst.setOption(Object.assign({}, commonOptions, {
         tooltip: {
             trigger: 'axis',
             axisPointer: {
@@ -165,7 +165,7 @@ $.get('./data/lines.json', function (data) {
     lineSelect.addEventListener('change', function() {
         var selectedLine = this.value;
         if (selectedLine === 'all') {
-            myChart.setOption(Object.assign({}, commonOptions, {
+            myChart_gmst.setOption(Object.assign({}, commonOptions, {
             tooltip: {
                 trigger: 'axis',
                 axisPointer: {
@@ -272,7 +272,7 @@ $.get('./data/lines.json', function (data) {
             ]
         }), true);  
         } else if (selectedLine === 'line1') {
-                myChart.setOption(Object.assign({}, commonOptions, {
+                myChart_gmst.setOption(Object.assign({}, commonOptions, {
                 tooltip: {
                     trigger: 'axis',
                     axisPointer: {
@@ -365,7 +365,7 @@ $.get('./data/lines.json', function (data) {
                 ]
             }), true);
         } else if (selectedLine === 'line2') {
-            myChart.setOption(Object.assign({}, commonOptions, {
+            myChart_gmst.setOption(Object.assign({}, commonOptions, {
                 tooltip: {
                     trigger: 'axis',
                     axisPointer: {
@@ -458,7 +458,7 @@ $.get('./data/lines.json', function (data) {
                 ]
             }), true);
         } else if (selectedLine === 'line3') {
-            myChart.setOption(Object.assign({}, commonOptions, {
+            myChart_gmst.setOption(Object.assign({}, commonOptions, {
                 tooltip: {
                     trigger: 'axis',
                     axisPointer: {
@@ -551,7 +551,7 @@ $.get('./data/lines.json', function (data) {
                 ]
             }), true);
         } else if (selectedLine === 'line4') {
-            myChart.setOption(Object.assign({}, commonOptions, {
+            myChart_gmst.setOption(Object.assign({}, commonOptions, {
                 tooltip: {
                     trigger: 'axis',
                     axisPointer: {
