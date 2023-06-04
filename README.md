@@ -14,7 +14,7 @@ This is [Milestone 1](https://github.com/com-480-data-visualization/project-2023
 
 
 ## Milestone 2
-This is [Milestone 2]()
+This is [Milestone 2](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/Milestone2.md)
 
 ## Milestone 3
 - Website: Click [here](https://skye-du.github.io/GreenDots_DataViz.github.io/)
