@@ -37,24 +37,14 @@
     const colorBar = document.querySelector("#color-bar");
 
     const colorRanges = [
-        { color: '#ebfaef80', label: '1000' },
-        { color: '#c2efce80', label: '2000' },
-        { color: '#9ae5ae80', label: '5000' },
-        { color: '#71da8d80', label: '10000' },
-        { color: '#2fb65380', label: '20000' },
-        { color: '#258e4180', label: '50000' },
-        { color: '#1a652e80', label: '>50000' },
+        { color: '#ebfaef80', label: '100' },
+        { color: '#c2efce80', label: '500' },
+        { color: '#9ae5ae80', label: '1000' },
+        { color: '#71da8d80', label: '2500' },
+        { color: '#2fb65380', label: '5000' },
+        { color: '#258e4180', label: '10000' },
+        { color: '#1a652e80', label: '50000' },
     ];
-//     const colorRanges = [
-//         { color: '#949c9c', label: '1000' },
-//         { color: '#bdc7bb', label: '2000' },
-//         { color: '#4e5e52', label: '5000' },
-//         { color: '#597353', label: '10000' },
-//         { color: '#6a8f59', label: '20000' },
-//         { color: '#7FB15D', label: '50000' },
-//         { color: '#85BA5D', label: '>50000'},
-//      ];
-
     for (let range of colorRanges) {
         const div = document.createElement('div');
         div.classList.add('color-bar-item');
