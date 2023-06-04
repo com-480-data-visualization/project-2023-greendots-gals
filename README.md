@@ -17,13 +17,13 @@ This is [Milestone 1](https://github.com/com-480-data-visualization/project-2023
 This is [Milestone 2](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/Milestone2.md)
 
 ## Milestone 3
-- Website: Click [here](https://skye-du.github.io/GreenDots_DataViz.github.io/)
+- Website: Click [here](https://com-480-data-visualization.github.io/project-2023-greendots-gals/)
 - Process book: Click Here (上传后加一下)
-- Technical Implementation: (这是我从其他人那复制过来的，4、5两步不知道干啥)
+- How to explore this webpage: reading the decription to more insight about our data; explore visualization by hovering and clicking. Footnote of our visulization is also interesing.
 
 To run the website locally, you need to follow the steps:
 
-1. Clone the following repository: https://github.com/Skye-Du/GreenDots_DataViz.github.io.git
+1. Clone the this repository 
 2. run npm install to install required dependencies
 3. run npm run dev to start development server
 4. For VS code users, to view the web correctly, please install a live server extension.
