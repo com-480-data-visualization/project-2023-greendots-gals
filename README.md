@@ -19,7 +19,7 @@ This is [Milestone 2](https://github.com/com-480-data-visualization/project-2023
 ## Milestone 3
 - Website: Click [here](https://com-480-data-visualization.github.io/project-2023-greendots-gals/)
 - Process book: Click [here](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/files/Process%20book.pdf)
-- Screencast: Click [here]()
+- Screencast: Click [here](https://youtu.be/izR3xDOtrLU)
 - How to explore this webpage: read the description for more insights about our data; explore visualization by hovering and clicking; footnotes of our visulization are also interesting.
 
 To run the website locally, you need to follow the steps:
