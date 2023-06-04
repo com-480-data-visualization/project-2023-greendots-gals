@@ -1,24 +1,31 @@
-async function* _canvas(DOM,width,height,d3,sphere,land,borders,countries,$0,tilt,Versor)
+async function* _canvas(DOM,width,height,d3,sphere,land,borders,countries,$0,tilt,Versor,mutableCountryInfo)
 {
   const context = DOM.context2d(width, height);
   const projection = d3.geoOrthographic().fitExtent([[10, 10], [width - 10, height - 10]], sphere);
   const path = d3.geoPath(projection, context);
+  const canvas = context.canvas;
+  let consumptionType = 'consPer';
 
   function getColor(consPer, consTotal) {
-    if (consPer < 1000) {
-      return "#fceae8"; 
-    } else if (consPer < 2000) {
-      return "#f7bfba";
-    } else if (consPer < 5000) {
-      return "#f2958d";
-    } else if (consPer < 10000) {
-      return "#ed6b5f";
-    } else if (consPer < 20000) {
-      return "#e74031";
-    } else if (consPer < 50000) {
-      return "#ce2718";
-    }else {
-      return "#a01e12";
+    if (consumptionType === 'consPer') {
+        if (consPer < 1000) { return "#ebfaef80"; 
+      } else if (consPer < 2000) { return "#c2efce80";
+      } else if (consPer < 5000) { return "#9ae5ae80";
+      } else if (consPer < 10000) { return "#71da8d80";
+      } else if (consPer < 20000) { return "#2fb65380";
+      } else if (consPer < 50000) { return "#258e4180";
+      } else if (consPer < 200000){ return "#1a652e80";
+      } else { return "#00080";
+      } 
+    } else if (consumptionType === 'consTotal') {
+        if (consTotal < 500) { return "#9ed6e180";
+      } else if (consPer < 1000) { return "#77c5d580";
+      } else if (consPer < 2500) { return "#50b4c880";
+      } else if (consPer < 5000) { return "#379baf80";
+      } else if (consPer < 10000) { return "#2a788880";
+      } else if (consPer < 50000) {return "#1e566180";
+      } else { return "#00080";
+      } 
     }
   }
 
@@ -31,7 +38,6 @@ async function* _canvas(DOM,width,height,d3,sphere,land,borders,countries,$0,til
     }
   }
 
-
   function render(country, arc) {
     context.clearRect(0, 0, width, height);
     updateCountries();
@@ -43,7 +49,7 @@ async function* _canvas(DOM,width,height,d3,sphere,land,borders,countries,$0,til
     //context.beginPath(), path(country), context.fillStyle = country.properties.fillColor, context.fill();
     //context.beginPath(), path(country), context.fillStyle = "#f00", context.fill();
     context.beginPath(), path(borders), context.strokeStyle = "#fff", context.lineWidth = 0.5, context.stroke();
-    context.beginPath(), path(sphere), context.strokeStyle = "#000", context.lineWidth = 1.5, context.stroke();
+    context.beginPath(), path(sphere), context.strokeStyle = "#000", context.lineWidth = 1, context.stroke();
     context.beginPath(), path(arc), context.stroke();
     return context.canvas;
   
@@ -56,9 +62,10 @@ async function* _canvas(DOM,width,height,d3,sphere,land,borders,countries,$0,til
     const fillColor = getColor(consPer, consTotal);
     country.properties.fillColor = fillColor;
 
+    mutableCountryInfo.value = `${country.properties.name}, consumption per person in 2019 is ${consPer} kwh.`;
+
     $0.value = country.properties.name;
     yield render(country);
-    //yield {canvas: render(country), consPer, consTotal};
 
     p1 = p2, p2 = d3.geoCentroid(country);
     r1 = r2, r2 = [-p2[0], tilt - p2[1], 0];
@@ -66,7 +73,7 @@ async function* _canvas(DOM,width,height,d3,sphere,land,borders,countries,$0,til
     const iv = Versor.interpolateAngles(r1, r2);
 
     await d3.transition()
-        .duration(1250)
+        .duration(2000)
         .tween("render", () => t => {
           projection.rotate(iv(t));
           render(country, {type: "LineString", coordinates: [p1, ip(t)]});
@@ -77,6 +84,7 @@ async function* _canvas(DOM,width,height,d3,sphere,land,borders,countries,$0,til
         })
       .end();
   }
+
 }
 
 
@@ -178,13 +186,26 @@ function _d3(require){return(
 require("d3@6")
 )}
 
+function _countryInfo() {
+  return (
+      ""
+  )
+}
+
+
 export default function define(runtime, observer) {
   const main = runtime.module();
-  main.variable(observer("canvas")).define("canvas", ["DOM","width","height","d3","sphere","land","borders","countries","mutable name","tilt","Versor"], _canvas);
+  main.variable(observer("canvas")).define("canvas", ["DOM","width","height","d3","sphere","land","borders","countries","mutable name","tilt","Versor", "mutable countryInfo"], _canvas);
   main.variable(observer("Versor")).define("Versor", _Versor);
+
   main.define("initial name", _name);
   main.variable(observer("mutable name")).define("mutable name", ["Mutable", "initial name"], (M, _) => new M(_));
   main.variable(observer("name")).define("name", ["mutable name"], _ => _.generator);
+
+  main.define("initial countryInfo", _countryInfo);
+  main.variable(observer("mutable countryInfo")).define("mutable countryInfo", ["Mutable", "initial countryInfo"], (M, _) => new M(_));
+  main.variable(observer("countryInfo")).define("countryInfo", ["mutable countryInfo"], _ => _.generator);
+
   main.variable(observer("height")).define("height", ["width"], _height);
   main.variable(observer("tilt")).define("tilt", _tilt);
   main.variable(observer("sphere")).define("sphere", _sphere);
@@ -196,3 +217,4 @@ export default function define(runtime, observer) {
   main.variable(observer("d3")).define("d3", ["require"], _d3);
   return main;
 }
+
