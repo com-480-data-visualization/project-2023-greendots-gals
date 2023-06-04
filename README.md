@@ -9,12 +9,12 @@
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
 ## Milestone 1
-This is [Milestone 1](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/Milestone1.md)
+This is [Milestone 1](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/files/Milestone1.md)
 
 
 
 ## Milestone 2
-This is [Milestone 2](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/Milestone2.md)
+This is [Milestone 2](https://github.com/com-480-data-visualization/project-2023-greendots-gals/blob/master/files/Milestone2.md)
 
 ## Milestone 3
 - Website: Click [here](https://com-480-data-visualization.github.io/project-2023-greendots-gals/)
